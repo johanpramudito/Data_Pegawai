@@ -87,24 +87,24 @@ export default function Home() {
       }}>
           <form onSubmit={handleSubmit} className="flex flex-col items-start justify-start gap-3 mt-5">
             <div className="flex flex-col items-start justify-center gap-3 bg-gray-300 p-3 rounded-lg w-[500px] hover:bg-gray-600 group">
-              <h4 className="text-xl group-hover:text-white">Nama : </h4>
-              <input type="text" className="ring-2 ring-blue-400 rounded-lg hover:ring-blue-800 transition w-full p-2" onChange={(e) => {setNama(e.target.value)}} value={nama} id="nama"></input>
+              <h4 className="text-xl group-hover:text-white after:content-['*'] after:text-pink-500 after:ml-0.5">Nama</h4>
+              <input type="text" placeholder="Masukkan Nama..." className="ring-2 ring-blue-400 rounded-lg hover:ring-blue-800 transition w-full p-2" onChange={(e) => {setNama(e.target.value)}} value={nama} id="nama"></input>
             </div>
             <div className="flex flex-col items-start justify-center gap-3 bg-gray-300 p-3 rounded-lg w-[500px] hover:bg-gray-600 group">
-              <h4 className="text-xl group-hover:text-white">Email : </h4>
-              <input type="text" className="ring-2 ring-blue-400 rounded-lg hover:ring-blue-800 transition w-full p-2" onChange={(e) => {setEmail(e.target.value)}} value={email} id="email"></input>
+              <h4 className="text-xl group-hover:text-white after:content-['*'] after:text-pink-500 after:ml-0.5">Email</h4>
+              <input type="email" placeholder="Masukkan Email..." className="ring-2 rounded-lg  transition w-full p-2 invalid:text-pink-700 invalid:focus:ring-pink-700 invalid:focus:border-pink-700" onChange={(e) => {setEmail(e.target.value)}} value={email} id="email"></input>
             </div>            
             <div className="flex flex-col items-start justify-center gap-3 bg-gray-300 p-3 rounded-lg w-[500px] hover:bg-gray-600 group">
-              <h4 className="text-xl group-hover:text-white">Posisi : </h4>
-              <input type="text" className="ring-2 ring-blue-400 rounded-lg hover:ring-blue-800 transition w-full p-2" onChange={(e) => {setPosisi(e.target.value)}} value={posisi} id="posisi"></input>
+              <h4 className="text-xl group-hover:text-white after:content-['*'] after:text-pink-500 after:ml-0.5">Posisi</h4>
+              <input type="text" placeholder="Masukkan Posisi..." className="ring-2 ring-blue-400 rounded-lg hover:ring-blue-800 transition w-full p-2" onChange={(e) => {setPosisi(e.target.value)}} value={posisi} id="posisi"></input>
             </div>
             <div className="flex flex-col items-start justify-center gap-3 bg-gray-300 p-3 rounded-lg w-[500px] hover:bg-gray-600 group">
-              <h4 className="text-xl group-hover:text-white">Gaji : </h4>
-              <input type="text" className="ring-2 ring-blue-400 rounded-lg hover:ring-blue-800 transition w-full p-2" onChange={(e) => {setGaji(e.target.value)}} value={gaji} id="gaji"></input>
+              <h4 className="text-xl group-hover:text-white after:content-['*'] after:text-pink-500 after:ml-0.5">Gaji</h4>
+              <input type="text" placeholder="Masukkan Gaji..." className="ring-2 ring-blue-400 rounded-lg hover:ring-blue-800 transition w-full p-2" onChange={(e) => {setGaji(e.target.value)}} value={gaji} id="gaji"></input>
             </div>
-            <div className="flex flex-col items-start justify-center gap-3 bg-gray-300 p-3 rounded-lg w-[500px] hover:bg-gray-600 group">
-              <h4 className="text-xl group-hover:text-white">Tanggal Lahir : </h4>
-              <input type="text" className="ring-2 ring-blue-400 rounded-lg hover:ring-blue-800 transition w-full p-2" onChange={(e) => {setTanggalLahir(e.target.value)}} value={tanggalLahir} id="tanggallahir"></input>
+            <div className="flex flex-col items-start justify-center gap-3 bg-gray-300 p-3 rounded-lg w-[500px] hover:bg-gray-600 group ">
+              <h4 className="text-xl group-hover:text-white after:content-['*'] after:text-pink-500 after:ml-0.5">Tanggal Lahir</h4>
+              <input type="text" placeholder="Masukkan Tanggal Lahir..." className="ring-2 ring-blue-400 rounded-lg hover:ring-blue-800 transition w-full p-2" onChange={(e) => {setTanggalLahir(e.target.value)}} value={tanggalLahir} id="tanggallahir"></input>
             </div>
             <Button type={edit ? "Edit" : "Add"} className="mx-auto mt-[2px]"></Button>
           </form>
